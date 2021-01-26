@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <form action="/get" method="POST">
+        
+            <label for="">Converting from:</label>
+            <input type="text" name="fcurr">
+       
+        
+            <label for="">Converting to:</label>
+            <input type="text" name="tcurr">
+       
+       
+            <label for="">Amount:</label>
+            <input type="text" name="amount">
+      
+        <button>Convert</button>
+        
+    </form>
+    
+    {% block content %}
+    <h4>List of Currencies</h4>
+    <div class="country">
+        <p>
+        {% for item in country %}
+        {{ item }} -
+        {% endfor %}     
+        </p>
+    </div>
+   
+    
+    {% endblock content %}
+</body>
+</html>

@@ -1,0 +1,51 @@
+label {
+	grid-column: 1 / 2;
+	text-align: right;
+}
+
+button {
+	width: 100px;
+	align-content: center;
+}
+
+form {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 16px;
+	max-width: 400px;
+	text-align: center;
+	background-color: lightgray;
+	padding: 30px;
+	border-radius: 15px;
+}
+
+body {
+	max-width: 500px;
+	margin: auto;
+}
+
+input {
+	border-radius: 2px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.results {
+	background-color: lightcoral;
+	border-radius: 15px;
+	padding: 30px;
+	margin-top: 20px;
+	max-width: 400px;
+}
+h3 {
+	text-align: center;
+}
+.country {
+	background-color: lightcyan;
+	border-radius: 15px;
+	padding: 30px;
+	margin-top: 20px;
+	max-width: 400px;
+}
